@@ -9,6 +9,7 @@ const searchMeals = () => {
 
 const displayMeals = meals => {
     const mealsDiv = document.getElementById('food-container');
+    mealsDiv.innerHTML = '';
     meals.forEach(meal => {
     const mealDiv = document.createElement('div');
     mealDiv.className = 'container';
